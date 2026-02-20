@@ -3,6 +3,7 @@ import { Inter, Montserrat } from "next/font/google"; // Importamos las fuentes 
 import './globals.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 // Configuración de la fuente Inter (para textos largos)
 const inter = Inter({ 
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
